@@ -15,13 +15,26 @@
 
   <!-- Custom styles for this template -->
   <link href="carousel.css" rel="stylesheet">
+
+  <script language="javascript" type="text/javascript">
+    function autoPlay() {
+        var myAuto = document.getElementById('myaudio');
+        myAuto.play();
+        myAuto.load();
+    }
+    function closePlay() {
+        var myAuto = document.getElementById('myaudio');
+        myAuto.pause();
+    }
+  </script>
+</head>
 </head>
 
 <body>
 
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Carousel</a>
+      <a class="navbar-brand" href="#">假面騎士Kamen Rider</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -48,8 +61,10 @@
           </li>
         </ul>
         <form class="form-inline mt-2 mt-md-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <audio src="Over.mp3" id="myaudio" controls="controls" loop="true" hidden="true">
+          </audio>
+          <input type="button" onclick="autoPlay()" value="播放" />
+          <input type="button" onclick="closePlay()" value="關閉" />
         </form>
       </div>
     </nav>
@@ -66,37 +81,32 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img class="first-slide"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+            src="https://i2.wp.com/unsungchess.com/wp-content/uploads/2019/08/%E5%81%87%E9%9D%A2%E9%A8%8E%E5%A3%AB.jpg?fit=1920%2C1280&ssl=1"
+            alt="First slide">
           <div class="container">
             <div class="carousel-caption text-left">
-              <h1>Example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-                metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
             </div>
           </div>
         </div>
         <div class="carousel-item">
-          <img class="second-slide"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+          <img class="second-slide" src="https://pbs.twimg.com/media/D8BD76LVUAAwYWy.jpg:large" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-                metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              <p><a class="btn btn-lg btn-primary"
+                  href="https://zh.wikipedia.org/wiki/%E5%81%87%E9%9D%A2%E9%A8%8E%E5%A3%AB%E7%B3%BB%E5%88%97"
+                  target="_blank" role="button">Learn more</a>
+              </p>
             </div>
           </div>
         </div>
         <div class="carousel-item">
-          <img class="third-slide"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+          <img class="third-slide" src="https://tx-free-imgs.acfun.cn/o_1e3kbckqo130h5f26skrgut4r0.jpeg?imageslim"
+            alt="Third slide">
           <div class="container">
             <div class="carousel-caption text-right">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-                metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+              <p><a class="btn btn-lg btn-primary" href="https://www.facebook.com/KRKRSTRB/" target="_blank"
+                  role="button">Browse FB</a>
+              </p>
             </div>
           </div>
         </div>
@@ -121,34 +131,252 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="rounded-circle"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+          <img class="rounded-circle" src="https://inews.gtimg.com/newsapp_match/0/8746576868/0"
             alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
-            vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
-            magna.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <h2>時王ZI-O</h2>
+          <p>--常磐莊吾（常磐 ソウゴ（ときわ・ソウゴ）--<br>假面騎士ZI-O、逢魔ZI-O的變身者，2000年4月28日生，18歲至19歲。
+            就讀光之森高等學校高中三年級，擅長科目是各種歷史，但不擅長科目是化學和物理，因此使用Build裝甲必殺技時所出現的彈幕並不是數學算式，而是對理科不滿的感想。</p>
+          <p><a class="btn btn-secondary"
+              href="https://zh.wikipedia.org/wiki/%E5%81%87%E9%9D%A2%E9%A8%8E%E5%A3%ABZI-O%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8"
+              target="_blank" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="https://truth.bahamut.com.tw/s01/201808/076ea3712081fa3c51afa97f35d52b7f.JPG"
+            alt="Generic placeholder image" width="140" height="140">
+          <h2>Build</h2>
+          <p>--桐生戰兔 / 葛城巧-- <br>假面騎士Build、假面騎士Evol（被艾博魯特附身時） 的變身者，26歲。
+            危險等級為3.2 - 3.7 → 3.9 → 4.2 - 4.4 → 6.0 - 6.3 → 7.0。
+            天才物理學家，平成騎士中最高智商的主角，也是《假面騎士系列》的第2位。
+            熟知一切困難的公式，擁有優異的頭腦和身體能力，平時喜歡做實驗，每當看到讓他感到興奮的東西時，頭髮一部分會豎起來，而且每一感到不解或興奮時會抓起頭髪。</p>
+          <p><a class="btn btn-secondary"
+              href="https://zh.wikipedia.org/wiki/%E5%81%87%E9%9D%A2%E9%A8%8E%E5%A3%ABBuild%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8"
+              target="_blank" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="rounded-circle"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+            src="data:image/jpeg;base64,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"
             alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
-            mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-            condimentum nibh.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <h2>EX-aid</h2>
+          <p>--寶生永夢（ほうじょう・えむ）--<br>假面騎士EX-AID、假面騎士Para-DX Fighter Gamer Level 50(被帕拉德附身時)的變身者。
+            二十四歲，聖都大學附屬醫院小兒科的實習醫生，後因小兒科實習結束轉至外科實習，在實習三個月後結束外科的實習而轉至內科實習，實習結束後正式成為小兒科醫生。實際為電玩遊戲界被稱為「M」的知名神秘天才玩家。
+            遊戲病的首例患者，帕拉德的寄生者。</p>
+          <p><a class="btn btn-secondary"
+              href="https://zh.wikipedia.org/wiki/%E5%81%87%E9%9D%A2%E9%A8%8E%E5%A3%ABEX-AID%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8"
+              target="_blank" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="https://a.ecimg.tw/items/DJAH2OA9007ZZNX/i010001_1490950698.jpg"
+            alt="Generic placeholder image" width="140" height="140">
+          <h2>Ghost</h2>
+          <p>--天空寺尊（てんくうじ・タケル）--<br>假面騎士Ghost的變身者，十月四日生日，18歲。
+            十年前身為幽靈獵人的父親天空寺龍去世後成為了大天空寺院的繼承人。
+            是個開朗、無憂無慮及魯莽，但不會違背自己信念的率直青年，會從內心深處發怒絕不容許輕率對待生命的人。
+            對宮本武藏充滿敬畏，在父親臨終前從其手上得到宮本武藏佩刀的護環，利用此物作為項飾以銘記需學習英雄之心，亦因而愛好閱讀書籍《世界偉人錄》。</p>
+          <p><a class="btn btn-secondary"
+              href="https://zh.wikipedia.org/wiki/%E5%81%87%E9%9D%A2%E9%A8%8E%E5%A3%ABGhost%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8"
+              target="_blank" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="rounded-circle"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+            src="https://img.moegirl.org/common/8/8a/%E5%81%87%E9%9D%A2%E9%AA%91%E5%A3%ABDrive%E6%B5%B7%E6%8A%A5.jpg"
             alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
-            felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-            massa justo sit amet risus.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <h2>Drive</h2>
+          <p>--泊進之介（とまり・しんノすけ）--<br>假面騎士Drive、假面騎士超Dead Heat Drive、假面騎士Zero Drive、假面騎士Dead Heat Drive的變身者。
+            職位是巡查，熱愛汽車和喜歡吃牛奶糖的警官。生日日期與聖誕節平安夜為同一天。十分討厭保密主義的人。
+            對作為警部補的父親泊英介十分敬重，並在其影響下成為刑警。</p>
+          <p><a class="btn btn-secondary"
+              href="https://zh.wikipedia.org/wiki/%E5%81%87%E9%9D%A2%E9%A8%8E%E5%A3%ABDrive%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8"
+              target="_blank" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="https://img.itw01.com/images/2018/11/28/12/5851_1x7HEJ_YV4UHED.jpg"
+            alt="Generic placeholder image" width="140" height="140">
+          <h2>鎧武Gaim</h2>
+          <p>--葛葉紘汰（かずらば・こうた）--<br>假面騎士鎧武的變身者。生日1993年1月30日。
+            曾是街舞團體「鎧武隊」隊員。
+            期望能好好地工作幫補家計，讓唯一的親人姊姊葛葉晶安心而疏遠團隊。
+            常插手別人的糾紛結果招來霉運，心地善良的行動家，總是為了別人而作戰。
+            有著會在阪東清治郎的店中賒帳吃白餐的惡習，據阪東所言紘汰「吃東西從來沒有付過錢」。</p>
+          <p><a class="btn btn-secondary"
+              href="https://zh.wikipedia.org/wiki/%E5%81%87%E9%9D%A2%E9%A8%8E%E5%A3%AB%E9%8E%A7%E6%AD%A6%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8"
+              target="_blank" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="https://i.pinimg.com/originals/6b/8a/62/6b8a621257a08c85d0c342ca0b21ebd0.jpg"
+            alt="Generic placeholder image" width="140" height="140">
+          <h2>Wizard</h2>
+          <p>--操真晴人（そうま・はると）--<br>22歲。半年前被綁架，在儀式「魔宴」中被當作祭品而成為魅影Wizardragon的宿主，危急一刻因萌生出一絲希望才得以倖存。喜歡阿曆。在心目中,阿曆是最重要的存在。
+            同時從白色魔法使手中得到變身系統Wizard Driver而成為假面騎士Wizard，從此立志與魅影周旋到底。
+            與魅影戰鬥已成為生活基礎之一，即使日常看起來像輕浮男的個性，行事不太檢點而常常被別人誤解。
+            非常愛好糖粉甜甜圈。</p>
+          <p><a class="btn btn-secondary"
+              href="https://zh.wikipedia.org/wiki/%E5%81%87%E9%9D%A2%E9%A8%8E%E5%A3%ABWizard%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8"
+              target="_blank" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="https://i.pinimg.com/originals/2d/11/9d/2d119d118b2cc068e66edc0dd601ce7b.jpg"
+            alt="Generic placeholder image" width="140" height="140">
+          <h2>Fourze</h2>
+          <p>
+            --如月弦太朗（きさらぎ・げんたろう）--<br>假面騎士Fourze的變身者，轉學到天之川學園高中的學生。頂著飛機頭髮型並配短袍，看起來雖然像不良少年，但其實只有成績不好，而且本人擁有很強的正義感。「要和全校學生成為朋友」是本人一直努力的目標。
+            性格非常鮮明的熱血笨蛋角色，相反待人時表現出乎意料的洞察力，對朋友是非常愛護，必先和對方進行「友情之証」來確立朋友關係。開始時轉學到天之川學園高中的2年B班學生，第29話開始升為3年B班。17歲→18歲。</p>
+          <p><a class="btn btn-secondary"
+              href="https://zh.wikipedia.org/wiki/%E5%81%87%E9%9D%A2%E9%A8%8E%E5%A3%ABFourze%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8"
+              target="_blank" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle"
+            src="https://4.bp.blogspot.com/-26HdUdKCm1c/WfwfMT862MI/AAAAAAAAAGM/Dbka4g1y1LwfuufUWbg6iS1cLuYx5GyfACLcBGAs/s1600/tokufansid_BZi153Tld7z.jpg"
+            alt="Generic placeholder image" width="140" height="140">
+          <h2>OOO</h2>
+          <p>--火野映司（ひの えいじ）--<br>假面騎士OOO與假面騎士Birth的變身者。
+            不抱有任何夢想與追求，基本上和慾望沾不上邊的散漫青年。雙親與兄弟都是有名的政治家。
+            每天只需要有三餐吃飽就能滿足的。沒有存款，沒有興趣愛好。喜歡迷迷糊糊地眺望景色。個性看起來很悠閒，不過觀察力和警覺心很強，曾識破Ankh隱瞞Yummy所在處的意圖，對炸彈的存在跟造成的聲響很敏感。
+            對於「內褲」有莫名的執著和品味，認為只要有零錢和內褲就能不斷地生活。現在在多國料理店打工。
+            對於朋友極重義氣，就算只是幾分鐘前認識的也是一樣，有著強烈的正義感，不太喜歡算計別人的戰術。</p>
+          <p><a class="btn btn-secondary"
+              href="https://zh.wikipedia.org/wiki/%E5%81%87%E9%9D%A2%E9%A8%8E%E5%A3%ABOOO%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8"
+              target="_blank" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="https://wallpapercave.com/wp/wp4552316.jpg" alt="Generic placeholder image"
+            width="140" height="140">
+          <h2>W</h2>
+          <p>--左翔太郎（ひだり
+            しょうたろう）--<br>假面騎士W（左半身）[1]、假面騎士Joker的變身者，自稱是「硬漢偵探」（Hard-Boiled，常被偵探小說界翻成「冷硬派」），但有時會受情感因素而改變做法，被菲利普及亞樹子稱為「半吊子偵探」（Half-Boiled）。第一人稱為「俺」。
+            過去曾是鳴海莊吉的弟子，但行事作風往往表現出不成熟而不受其承認。
+            雖然本人並不喜歡，但卻對尋找動物很有心得。
+            本人所沖的咖啡並不好飲，被龍評價為浪費了咖啡豆。</p>
+          <p><a class="btn btn-secondary"
+              href="https://zh.wikipedia.org/wiki/%E5%81%87%E9%9D%A2%E9%A8%8E%E5%A3%ABW%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8"
+              target="_blank" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle"
+            src="https://cdn.kingstone.com.tw/mag/images/product/20712/2071232422494/2071232422494b.jpg"
+            alt="Generic placeholder image" width="140" height="140">
+          <h2>Decade</h2>
+          <p>--門矢 士 （かどや・つかさ）--<br>假面騎士Decade 的變身者。喜歡攝影，經常掛著相機在胸前（相機型號為SuperHeadz生產的Blackbird,
+            Fly雙眼反射式相機），但沖曬後的照片總是和原來的相差甚遠，自己則以「因為這個世界不讓我拍攝」作解釋。
+            為人我行我素，看似不怎麼理會別人感受的大條性格，常常以「大概了解了」打斷別人的發言。實際上十分關心身旁的人，也很能理解同伴的感受（從其對雄介等騎士們作出開解，以及與真由及電波女等人的相處可得知。）</p>
+          <p><a class="btn btn-secondary"
+              href="https://zh.wikipedia.org/wiki/%E5%81%87%E9%9D%A2%E9%A8%8E%E5%A3%ABDecade%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8"
+              target="_blank" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="https://truth.bahamut.com.tw/s01/201711/eac989dd821fec8392bdff2c64711a9e.JPG"
+            alt="Generic placeholder image" width="140" height="140">
+          <h2>Kiva</h2>
+          <p>--紅渡--<br>假面騎士KIVA的變身者，於製作小提琴的小店內居住。行為怪異，不太會與人溝通，並以為自己對世界敏感，但被麻生惠指責是他自己的心理作用。
+            夢想是製作比父親更優越的小提琴。
+            背起成為KIVA的命運，與牙血鬼 戰鬥到底。
+            父親為紅音也，母親為真夜（西洋棋四幹部中的Queen）。</p>
+          <p><a class="btn btn-secondary"
+              href="https://zh.wikipedia.org/wiki/%E5%81%87%E9%9D%A2%E9%A8%8E%E5%A3%ABKiva%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8"
+              target="_blank" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle"
+            src="https://pic1.xuehuaimg.com/proxy/baijia/https://f12.baidu.com/it/u=1636996745,2018340317&fm=173&app=25&f=JPEG?w=640&h=399&s=4AAC3C620AD173E70BCC98C50000E023&access=215967316"
+            alt="Generic placeholder image" width="140" height="140">
+          <h2>電王Den O</h2>
+          <p>--野上良太郎--<br>假面騎士電王 Plat Form ＆ Liner
+            Form的變身者，經常走霉運的少年。意料之外下變身成電王卻完全不懂戰鬥，要靠異魔神附身並選擇模式才可以發揮不同的戰鬥力。儘管常遇到不幸的事卻能保持樂觀。於超·電王系列，受時間影響和Hana一樣也變回小孩子（12歲）。
+          </p>
+          <p><a class="btn btn-secondary"
+              href="https://zh.wikipedia.org/wiki/%E5%81%87%E9%9D%A2%E9%A8%8E%E5%A3%AB%E9%9B%BB%E7%8E%8B%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8"
+              target="_blank" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="https://i.pinimg.com/originals/c3/ea/3d/c3ea3d89cc39b1d75c2a268a1f2567aa.jpg"
+            alt="Generic placeholder image" width="140" height="140">
+          <h2>Kabuto</h2>
+          <p>--天道總司（てんどう そうじ）--<br>21歲，假面騎士Kabuto變身者。本故事的第一男主角，第一人稱「俺」。
+            以「行天之道、總司一切」自居，態度總是高傲不遜，認為自己是世界上最了不起、最偉大和最強的一個熱血青年。而其各方面能力(戰鬥力、料理能力等等)亦與其上述性格相符合。
+            擁有目中無人的個性，但絕非是自我中心者，總是溫柔的對待妹妹，對有困難的人，以傲慢的態度加以援手的正義男子。
+            對於加賀美，雖不喜與他親近，卻也在某種程度上予以認同。</p>
+          <p><a class="btn btn-secondary"
+              href="https://zh.wikipedia.org/wiki/%E5%81%87%E9%9D%A2%E9%A8%8E%E5%A3%ABKABUTO%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8"
+              target="_blank" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="https://i.pinimg.com/originals/08/50/8d/08508d441dca4733be03db5e1d6ab6e0.jpg"
+            alt="Generic placeholder image" width="140" height="140">
+          <h2>響鬼Hibiki</h2>
+          <p>--日高
+            仁志--<br>年齡為31歳（是目前為止主角騎士中登場年紀最大的）。本作品的主角、能夠變身為音擊戰士響鬼的男人。「響鬼」屬於猛士內部的代號，身體以紅色及紫色為主，是打擊系音擊戰士，以音叉變身，火屬性，武器是太鼓和雙鼓棒。16歲時成為鬼。原本為「猛士」關西支部所屬、五年前被調動至關東支部。
+          </p>
+          <p><a class="btn btn-secondary"
+              href="https://zh.wikipedia.org/wiki/%E5%B9%AA%E9%9D%A2%E8%B6%85%E4%BA%BA%E9%9F%BF%E9%AC%BC#%E4%B8%BB%E8%A7%92"
+              target="_blank" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle"
+            src="https://cdn.hk01.com/di/media/images/cis/5e3a4e2a4e64212bb85ae02e.jpg/EPzAWKZaQWQnzfD_fC61u4rhXRLIFtUEZFBMcmRQTHI?v=w1920"
+            alt="Generic placeholder image" width="140" height="140">
+          <h2>劍blade</h2>
+          <p>--劍崎一真--<br>假面騎士Blade的變身者。電視版為22歳，電影版時26歳。故事初期為BOARD的菜鳥假面騎士，跟著橘前輩到處封印四散的不死者。而隨者故事發展，實力越來越強。
+            個性熱血、單純、有點急躁，喜好助人，願意打從心底相信他人，即使對方是不死者也一樣，所以常被別人耍得團團轉。
+            不善理財的月光族，曾經向睦月抱怨自己的薪水常常不夠用，因此被栽贓是在市場偷東西的小偷時被睦月誤解是沒錢吃飯而動了歪念。</p>
+          <p><a class="btn btn-secondary"
+              href="https://zh.wikipedia.org/wiki/%E5%81%87%E9%9D%A2%E9%A8%8E%E5%A3%AB%E5%8A%8D%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8"
+              target="_blank" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="https://inews.gtimg.com/newsapp_match/0/8746670179/0"
+            alt="Generic placeholder image" width="140" height="140">
+          <h2>555</h2>
+          <p>--乾巧--<br>假面騎士Faiz（官方認定）和假面騎士Delta的變身者。原型為狼操冥使徒。擁有「貓舌頭」，不喜熱的食物。
+            以「保護他人的夢想」為戰鬥目的。
+            第34話為拯救真理露出其操冥使徒真身並藉此擊敗澤田作為利用SmartBrain醫學技術拯救真理的條件。
+            雖然身為操冥使徒，但一直為人類戰鬥著。</p>
+          <p><a class="btn btn-secondary"
+              href="https://zh.wikipedia.org/wiki/%E5%81%87%E9%9D%A2%E9%A8%8E%E5%A3%AB555%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8"
+              target="_blank" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="https://i.pinimg.com/originals/72/7e/6d/727e6d5426b927b0d428a16b39f08bb1.jpg"
+            alt="Generic placeholder image" width="140" height="140">
+          <h2>龍騎Dragon</h2>
+          <p>--城戶真司（きどしんじ)--<br>ORE雜誌社的見習記者，實力一般（隨劇情變強）。為人傻氣、正直，標準天然呆，卻有一顆善良的心，熱心助人，對事情有追根究底的精神，也是少數騎士中沒有需要滿足自己慾望的人。
+            在調查失蹤者榊原耕一時，意外在其處所得到龍騎卡盒還看見無雙龍，並在鏡世界意外認識秋山蓮和神崎優衣等人。
+            第1話變身時只有空白型態，在和無雙龍契約後正式成為了龍騎，並在第2話時就成功變成了龍騎，還成功發動了Final Vent「龍騎士踢」。</p>
+          <p><a class="btn btn-secondary"
+              href="https://zh.wikipedia.org/wiki/%E5%81%87%E9%9D%A2%E9%A8%8E%E5%A3%AB%E9%BE%8D%E9%A8%8E%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8"
+              target="_blank" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle"
+            src="https://cdn.hk01.com/di/media/images/1520620/org/d9a48e85f367efea720310864f3bb776.JPG/CKoLIJAm92Dm6cruv68ZV9IcT87Xrn53A-iz-APos_g?v=w1920"
+            alt="Generic placeholder image" width="140" height="140">
+          <h2>顎門Agito</h2>
+          <p>--津上翔一--<br>假面騎士顎門／（Agito）的變身者、假面騎士G3-X的第二任裝著員（第24-25話）。
+            21歳。4月1日出生，本名澤木哲也。
+            2000年9月27日因意外而獲得顎門力量的青年，但也因此喪失記憶。
+            居住在美杉教授家中，是個喜愛作料理、家事、農務的標準居家型男人，亦愛說冷笑話，無論做什麼美食都愛加上「空心菜」，並有著將小指伸進魚嘴以判斷魚新鮮度的特殊僻好。每當感應到「Unknown」現身殺人時，便會前往現場救人。一開始曾為自己的怪異能力而心情低落，後來決定為了「保護每個人的居所」而戰。
+          </p>
+          <p><a class="btn btn-secondary"
+              href="https://zh.wikipedia.org/wiki/%E5%81%87%E9%9D%A2%E9%A8%8E%E5%A3%AB%E9%84%82%E9%AC%A5%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8"
+              target="_blank" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle"
+            src="https://cdn.hk01.com/di/media/images/1520627/org/07616e389b3cdf7577513dae906bcd18.JPG/lOEtpj1AG-KslfOHnURiT6p_GetTJ_dGw4DYncOA2J0?v=w1920"
+            alt="Generic placeholder image" width="140" height="140">
+          <h2>空我Kuuga</h2>
+          <p>--五代雄介--<br>假面騎士空我的變身者，25歳。
+            1975年3月18日生，O型。出生於北海道，在神奈川縣山北町成長，是個在世界旅行的冒險家。
+            與未確認生物遭遇之際，彷彿感應到遺跡中發掘出的腰帶導引般將之著裝，而獲得變身為空我的能力。
+            對初見面的人會遞上一張自製名片，上頭還寫著「夢想追尋者・擁有2000（當時所擁有的技能數量）種技能的男人」。另外也有常豎起大拇指的癖好（招牌動作）。</p>
+          <p><a class="btn btn-secondary"
+              href="https://zh.wikipedia.org/wiki/%E5%81%87%E9%9D%A2%E9%A8%8E%E5%A3%AB%E7%A9%BA%E6%88%91#%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9"
+              target="_blank" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="myself.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>假面騎士我本人</h2>
+          <p>--朱旭崴--<br>元智大學資訊英專的一介平凡學生，立志成為假面騎士，為了略盡自己目前微薄的力量而努力學習並且回饋社會，期望有朝一日能夠被社會所認同。<br>哈哈，以上純屬玩笑的說。</p>
+          <p><a class="btn btn-secondary" href="#" role="button">什麼都沒有 &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -159,44 +387,18 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span>
+          <h2 class="featurette-heading">令和第一位假面騎士<br><span class="text-muted">平成結束之後嶄新的未來</span>
           </h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
-            semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-            commodo.</p>
+          <p class="lead">
+            --飛電或人（ひでん・あると）--<br>假面騎士ZERO-ONE、假面騎士001與假面騎士ZERO-TWO的變身者，22歲，1997年5月1日生，原為飛電Intelligence的第二任社長，後為飛電製作所的第一任社長。
+            本身並無搞笑才能，性格開朗，不會輕易放棄，夢想是讓周遭的人能得到笑容。
+            12年前在與飛電其雄在郊遊時發生了破曉時爆炸事件，飛電其雄拯救了其性命，但飛電其雄卻遭到嚴重受損，在系統關閉之前告訴飛電或人要追逐自己的夢想，這使其認為Humagear是能夠給人類帶來笑容與夢想的搭檔，也相信其是擁有心靈的存在。
+            第1話因祖父飛電是之助過世後，被接受傑亞衛星命令的伊絲帶到飛電Intelligence接受遺囑，但被他拒絕，之後因為曾經工作的地方遭到Berotha MAGiA的破壞，看見民眾們的恐慌，在於Berotha
+            MAGiA說出夢想沒有意義之時選擇挺身而出變身假面騎士ZERO-ONE，也因此接受當飛電Intelligence的社長。</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"
-            alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
-            semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-            commodo.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"
-            alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
-            semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-            commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"
+          <img class="featurette-image img-fluid mx-auto"
+            src="https://cdn.hk01.com/di/media/images/3049391/org/d65231f1c12633eb722ad0be2e337eb6.jpg/wJA9023lpynZeqYiFkbzquTCdILNq2ua2CQCitgkAoo?v=w1920"
             alt="Generic placeholder image">
         </div>
       </div>
